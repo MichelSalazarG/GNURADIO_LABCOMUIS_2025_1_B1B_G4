@@ -171,18 +171,10 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 
 ### **Procedimiento**
    Se realizaron mediciones bajo diferentes configuraciones de parámetros, con el fin de comparar los resultados de las simulaciones con las mostradas en el analizador de espectros o osciloscopio.
-   
-1. **Configurar el USRP 2920**:
-   - Configure el flujograma en GNU Radio para transmitir una señal a través del USRP. Habilite o deshabilite los bloques correspondientes (Channel Model, Throttle, UHD: USRP Sink, Virtual Sink). Para esto seleccione el bloque deseado y presionando `E` (enable) o `D` (disable), respectivamente.
-   - Identifique el bloque de frecuencia de muestreo (samp_rate) y observe el efecto de cambiar su valor (e.g. 10 kHz).
-   - Configure la frecuencia de muestreo (samp_rate) en 1 MHz.
-   - Verifique el efecto de modificar la frecuencia y ganancia del USRP. 
 
-2. **Medición con el Analizador de Espectros**:
-   - Conecte la salida del USRP al analizador de espectros.
-   - Mida el piso de ruido normalizado a la frecuencia de portadora que va a utilizar.
-   - Compare el espectro de la señal observada en el analizador de espectros con la observada en la pantalla de simulación. Tenga en cuenta que el radio (USRP) equivale al diagrama de bloques mostrado en la figura.
-1. Configurar USRP 2920.
+### **Evidencia y cambios realizados**  
+  
+1. *Configurar USRP 2920*
        
    A.  Analizador de espectros Piso de ruido a 700MHz
 ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Espectro_piso%20de%20ruido%20norm.jpeg)
@@ -197,7 +189,7 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
    ANALISIS DE MODIFICAR FC Y GANANCIA...
 
 
-2. Medición analizador de espectros.
+2. *Medición analizador de espectros*
 
    A.  Medición piso de ruido normalizado a Fc = 100MHz
    
@@ -228,17 +220,34 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
  /SENOIDAL
  /TRIANGULAR
 
- E. ANTENA
-<img src="qam_modulator.png" alt="QAM Modulator" width="400">
-     
-   - Analice y valide los resultados en el dominio de la frecuencia si se modifica:
+
+***///  - Analice y valide los resultados en el dominio de la frecuencia si se modifica:
      - el tipo de dato de la fuente (compleja o flotante)
      - la forma de onda 
      - la frecuencia y fase de la señal
      - la amplitud de la señal generada.
-   - Mida potencia de la señal transmitida y ancho de banda de diferentes señales generadas.
+   - Mida potencia de la señal transmitida y ancho de banda de diferentes señales generadas.///***
 
-   ultima vez!!!!!
+ ***///ULTIMA VEZ (6 MARZO)///***
+
+ E. Estaciones FM
+ 
+Usando una *Antena*:
+   I) Ancho de Banda.
+   
+   II) Relación señal a Ruido.
+   
+Usando un *Cable*:
+   I) Ancho de Banda.
+   
+   II) Relación señal a Ruido.
+
+ 3. *Medición osciloscopio*
+    
+ 4. *Relación señal a Ruido*
+
+   <img src="qam_modulator.png" alt="QAM Modulator" width="400">
+
    - Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido. 
    - Determinar la máxima potencia de transmisión.
    - Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
@@ -258,17 +267,16 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 
 ### **Preguntas Orientadoras**
 1. ¿Cómo se configura el USRP 2920 para transmitir una señal en una frecuencia específica?
-2. ¿Qué parámetros del flujograma afectan la potencia de la señal transmitida?
-3. ¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
-4. ¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
-5. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
-6. ¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
 
-### **Evidencia**
-- Capturas de pantalla de señales generadas en el dominio del tiempo y la frecuencia que evidencien las principales comparaciones realizadas.
-- Captura de la señal FM usada para medición de ancho de banda.
+Para configurar el USRP 2920 a una frecuencia específica es necesario cambiar en el diagrama de flujo el valor de la Frecuencia dada en signal source.
 
----
+3. ¿Qué parámetros del flujograma afectan la potencia de la señal transmitida?
+4. ¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
+5. ¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
+6. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
+7. ¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
+
+
 
 ## **Actividad 4: Análisis de Resultados y Conclusiones**
 
