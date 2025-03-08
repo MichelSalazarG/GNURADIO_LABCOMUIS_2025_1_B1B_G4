@@ -1,5 +1,5 @@
 
-# Práctica 1C. Mediciones de potencia y frecuencia
+# Práctica 1. Reconocimiento de equipos, GNU Radio, Mediciones de potencia y frecuencia
 
 ### Integrantes
 - **Danny Carolina Sierra Téllez** - 2220409
@@ -26,9 +26,7 @@ En comunicaciones es clave el procesamiento y análisis de las señales para gar
 ## Declaración de Originalidad y Responsabilidad
 Los autores de este informe certifican que el contenido aquí presentado es original y ha sido elaborado de manera independiente. Se han utilizado fuentes externas únicamente como referencia y han sido debidamente citadas.
 
-Asimismo, los autores asumen plena responsabilidad por la información contenida en este documento. 
-
-Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo: "Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."]
+Uso de IA: Se utilizó para reformular ciertas secciones del texto, verificar gramática, y optimizar la redacción general. Sin embargo, el contenido técnico, análisis y las conclusiones del informe, fueron desarrollados por los autores.
 
 ---
 ## Contenido
@@ -164,7 +162,7 @@ Por otro lado, la señal cuadrada está compuesta por un conjunto infinito de ar
 En las siguientes imagenes se puede observar el fenomeno antes mencionado. ![Primero](Primer punto/Imagenes/SCR05.PNG)
 
 
-## **Actividad 3: Transmisión y Medición de Señales con el USRP 2920**
+## **Actividad 3: Transmisión y Medición de Señales con el USRP 2920** (HACER UN PEQUEÑO ANÁLISIS DE LAS GRÁFICAS, COMPARAR RESULTADOS)
 
 ### **Objetivo**
 Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia, ancho de banda, piso de ruido y relación señal a ruido (SNR).
@@ -189,7 +187,7 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
    - Sam_rate = 10kHz
 ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0063.png) 
 
-   ANALISIS DE MODIFICAR FC Y GANANCIA...
+   **ANALISIS DE MODIFICAR FC Y GANANCIA...**
 
 
 2. *Medición analizador de espectros*
@@ -224,9 +222,7 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
  /TRIANGULAR
 0068 - 0069 (HACER)!!!!!!!!!!!!!!!!!!
 
-ANALIZAR
-
-
+**ANALIZAR**
  E. ANTENA
  
    I) Ancho de Banda.
@@ -287,7 +283,7 @@ Si, por ejemplo en una señal seno, la relación de potencia está dado por la A
 2. **Reflexionar sobre la SNR**:
    - Analice la importancia de la relación señal a ruido (SNR) en las comunicaciones inalámbricas.
    - Discuta cómo el piso de ruido afecta la capacidad de detectar señales débiles.
-La SNR es importante debido a que es de lo más usado en comunicaciones inalambricas, ya que afecta directamente a la señal, la capacidad de transmision de datos y la eficiencia del sistema.
+La SNR es importante debido a que es de lo más usado en comunicaciones inalambricas, ya que afecta directamente a la señal, la capacidad de transmision de datos y la eficiencia del sistema. **(BORRAR)** HACER Y BORRAR
 
 3. **Conclusiones**:
 
@@ -297,7 +293,7 @@ La relación señal a ruido **SNR** es un factor importante en las comunicacione
 
 *Las limitaciones en el laboratorio pueden deberse a diversos fenómenos que generan ruido, lo que perturba la señal y afecta la precisión de las mediciones. Esto puede provocar discrepancias entre los resultados experimentales y los análisis teóricos.*
 *Para mejorar la precisión de las mediciones, es fundamental minimizar el ruido que afecta la señal, por ejemplo, mediante el uso de cables con mejor blindaje o técnicas de filtrado adecuadas. Además, contar con un ancho de banda más amplio permitiría analizar el espectro de la señal con mayor detalle, especialmente en frecuencias más altas.*
-
+**(BORRAR LA CURSIVA, ES DE LA PLANTILLA COMO EJEMPLO)**
 
 ### **Preguntas Orientadoras**
 1. ¿Qué conclusiones se pueden obtener sobre la relación entre la potencia de la señal y la calidad de la comunicación?
