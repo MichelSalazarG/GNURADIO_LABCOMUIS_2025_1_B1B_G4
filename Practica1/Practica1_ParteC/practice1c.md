@@ -183,8 +183,11 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 
    B.  Analizador de espectros frecuencia de muestreo diferente.
 
-   /1MHz (FOTO 1 MEMORIA 3 MARZO)
-   /10kHz (FOTO 2 MEMORIA 3 MARZO)
+   - Sam_rate = 1MHz
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0062.png)
+      
+   - Sam_rate = 10kHz
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0063.png) 
 
    ANALISIS DE MODIFICAR FC Y GANANCIA...
 
@@ -194,7 +197,7 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
    A.  Medición piso de ruido normalizado a Fc = 100MHz
    
   - Analizador de espectros.
-   / (FOTO 3 MEMORIA 3 MARZO)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0064.png) 
    
   - Pantalla simulación
 ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Pto2_A_Piso%20de%20ruido%20norm%20sim.jpeg)
@@ -202,7 +205,7 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
   B. Variación en dominio de la frecuencia.
   
   - Analizador de espectros.
-   / (FOTO 4 MEMORIA 3 MARZO)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0065.png)
    
   - Pantalla simulación
 ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Variaci%C3%B3n_PTO2_B_sim.jpeg)
@@ -217,54 +220,27 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 
 
   D. Ancho de Banda
- /SENOIDAL
+ /SENOIDAL 
  /TRIANGULAR
+0068 - 0069 
+
+ANALIZAR
 
 
-***///  - Analice y valide los resultados en el dominio de la frecuencia si se modifica:
-     - el tipo de dato de la fuente (compleja o flotante)
-     - la forma de onda 
-     - la frecuencia y fase de la señal
-     - la amplitud de la señal generada.
-   - Mida potencia de la señal transmitida y ancho de banda de diferentes señales generadas.///***
-
- ***///ULTIMA VEZ (6 MARZO)///***
-
- E. Estaciones FM
+ E. ANTENA
  
-Usando una *Antena*:
    I) Ancho de Banda.
+![]()   0073
    
    II) Relación señal a Ruido.
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0074.png)  
    
-Usando un *Cable*:
-   I) Ancho de Banda.
-   
-   II) Relación señal a Ruido.
-
  3. *Medición osciloscopio*
+    03 --> 15:31 DESFASADA
+    04 --> CUADRADA 15:27
+    05 --->COS 15:31
+    06 ---> COS 15:32
     
- 4. *Relación señal a Ruido*
-
-   <img src="qam_modulator.png" alt="QAM Modulator" width="400">
-
-   - Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido. 
-   - Determinar la máxima potencia de transmisión.
-   - Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
-   - Compare los resultados de transmitir usando un cable y usando antenas.
-
-4. **Medición con el Osciloscopio**:
-   - Analice y valide los resultados en el dominio del tiempo si se modifica:
-     - el tipo de dato de la fuente (compleja o flotante)
-     - la forma de onda 
-     - la frecuencia y fase de la señal
-     - la amplitud de la señal generada.
-  - Contraste estos resultados con los obtenidos con el analizador de espectros.
-
-5. **Cálculo de la Relación Señal a Ruido (SNR)**:
-   - Usar las mediciones de potencia y piso de ruido para calcular la SNR de algunas de las señales generadas.
-   - Anotar el valor de la SNR en dB.
-
 ### **Preguntas Orientadoras**
 1. ¿Cómo se configura el USRP 2920 para transmitir una señal en una frecuencia específica?
 
