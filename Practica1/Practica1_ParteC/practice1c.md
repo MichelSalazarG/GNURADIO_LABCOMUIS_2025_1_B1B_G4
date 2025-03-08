@@ -2,7 +2,7 @@
 # Práctica 1C. Mediciones de potencia y frecuencia
 
 ### Integrantes
-- **PRIMER INTEGRANTE** - Código
+- **Danny Carolina Sierra Téllez** - 2220409
 - **Michel Dayanna Salazar Gómez** - 2214194
 
 Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones  
@@ -12,27 +12,33 @@ Universidad Industrial de Santander
 07 de marzo de 2025
 
 ---
-## **Objetivo General**
-Familiarizarse con el uso de herramientas de software definido por radio (SDR) como GNU Radio, junto con equipos de medición como el USRP 2920, el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000. Los estudiantes aprenderán a medir y analizar parámetros clave en comunicaciones, como potencia, ancho de banda, relación señal a ruido (SNR) y piso de ruido.
-Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento de las señales en diferentes condiciones para elaborar el informe.
+## Contenido
+
+### Resumen
+En esta práctica, se utilizó el sofware GNU Radio, así como equipos tales como el osciloscopio, el analizador de espectros y el USRP 2920. Se empezó a familiarizar con conceptos básicos sobre el uso de estas herramientas, mediante la simulación de flujogramas, así como la integración de los equipos para tomar medidas en el dominio del tiempo y frecuencia. Dentro de las medidas claves en comunicaciones, se encuentran el ancho de banda, relación señal a ruido, piso de ruido, potencia y diferentes análisis que permiten ver la variación de la señal, ruido y transmisión de la misma; confirmando el comportamiento teórico esperado.
+
+
+**Palabras clave:** GNU Radio, Espectro de Frecuencia, USRP 2920. 
+
+### Introducción
+En comunicaciones es clave el procesamiento y análisis de las señales para garantizar un buen proceso de transmisión y recepción de mensajes. Dentro de las medidas que están directamente relacionadas a estas, se destacan: la potencia, el piso de ruido y el ancho de banda; escenciales para buscar mejoras y evaluar los procesos de los sistemas de comunicación. Ahora bien, en la asignatura se hace uso de la herramienta de GNU Radio, así como de otros equipos de laboratorio como osciloscopio, analizador de espectros, antenas, radio entre otros; los cuales, permiten estudiar la relación de las medidas anteriormente mencionadas en el cambio de diferentes condiciones a señales.
+
+## Declaración de Originalidad y Responsabilidad
+Los autores de este informe certifican que el contenido aquí presentado es original y ha sido elaborado de manera independiente. Se han utilizado fuentes externas únicamente como referencia y han sido debidamente citadas.
+
+Asimismo, los autores asumen plena responsabilidad por la información contenida en este documento. 
+
+Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo: "Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."]
 
 ---
 ## Contenido
 
-### Resumen
-Descripción en no más de 150 palabras del contenido de la práctica. Debe ser conciso y brindar una idea clara sobre el trabajo realizado y sus conclusiones.
+## **Objetivo General**
 
-**Palabras clave:** de 2 a 5 palabras clave. 
+Familiarizarse con el uso de herramientas de software definido por radio (SDR) como GNU Radio, junto con equipos de medición como el USRP 2920, el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000. Los estudiantes aprenderán a medir y analizar parámetros clave en comunicaciones, como potencia, ancho de banda, relación señal a ruido (SNR) y piso de ruido.
+Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento de las señales en diferentes condiciones para elaborar el informe.
 
-### Introducción
-Cada práctica contará con preguntas orientadoras para la elaboración de la introducción. Por ejemplo: 
-- ¿Qué tan importante es la teoría de muestreo en el procesamiento de señales?
-- ¿Cuáles son los principales potenciales de GNURADIO en el laboratorio de comunicaciones?
-- ¿Qué pasa cuando se alcanza el límite de Nyquist?
-- ¿Qué tan alta debe ser la relación entre la frecuencia de muestreo y la frecuencia de la señal para visualizar la señal correctamente?
-- ¿Cuándo es importante interpolar una señal?
-- ¿Cuándo es importante diezmar una señal?
-- ¿Qué pasa cuando se asigna una frecuencia de muestreo inadecuada?
+---
 
 ### Procedimiento
 
@@ -51,28 +57,49 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 Familiarizarse con las especificaciones técnicas de los equipos de laboratorio y entender cómo configurarlos para realizar mediciones.
 
 ### **Procedimiento**
-1. **Revisar Manuales y Verificar Equipos**:
-   - Revisar las especificaciones de los equipos de laboratorio (USRP 2920, Osciloscopio R&S RTB2004 y Analizador de Espectros R&S FPC1000).
-   - Identificar las principales funciones y controles de los equipos.
+1. Se revisaron los manuales sobre cada uno de los equipos usados durante el desarrollo de las clases de laboratorio, con el fin de identificar especificaciones relevantes así como modo de uso, herramientas y controles de los mismos.
+  
+2. **Evidencia  y especificaciones Relevantes**:
+   *USRP 2920*
+      - Rango de frecuencia:  50MGz a 2.2GHz
+      - Ganancia configurable: 0 a 31.5dB pasos de 0.5dB
+      - Ancho de banda: 20M a 40MHz
+      - Resolución de frecuencia: <1kHz
+      - Potencia máxima de salida: 50m a 100mW
+        
+   *Osciloscopio R&S RTB2004*
+      - Ancho de banda mínimo: 70MHz a 300MHzbus
+      - Resolución vertical: 10bits
+      - Tipos de mediciones: básico, horizontal, vertical, cuenta.
+      - Escala vertical: 1mV a 5V
+      - Tasa de muestreo: 2.5GSa/s
+        
+   *Analizador de Espectros R&S FPC1000*
+      - Rango de frecuencia: 0 a 1GHz
+      - Resolución Bw: 1Hz a 3MHz
+      - Ruido de fondo: bajo -150dBm 
+      - Potencia piso de ruido: <-97.88dBm
 
-2. **Seleccionar Especificaciones Relevantes**:
-   - Seleccionar las **5 especificaciones** que consideren **más relevantes** de cada equipo. 
+Medición Piso de ruido:
 
-3. **Configuración de los Equipos**:
-   - **USRP 2920**: Identificar el rango de frecuencia y ganancia configurable del radio. Para esto, conecte la alimentación y el cable de red al radio, y desde un terminal (Ctrl + Alt + T) ejecute el comando `uhd_usrp_probe`.
-   - **Osciloscopio R&S RTB2004**: Identificar el ancho de banda máximo, resolución vertical y tipos de mediciones soportadas.
-   - **Analizador de Espectros R&S FPC1000**: Identificar el rango de frecuencia, resolución y figura de ruido.
+(IMAGEN)
 
 ### **Preguntas Orientadoras**
 1. ¿Cuál es el rango de frecuencia del USRP 2920 y cómo se compara con el del analizador de espectros?
+   El rango de frecuencia del USRP 2920 es indiscutiblemente más amplio que el del analizador de espectros, permitiendo cubrir frecuencias mayores.
+   
 2. ¿Qué parámetros del USRP 2920 se deben configurar para transmitir una señal en una frecuencia específica?
+   Dentro de los parámetros a cambiar para trasnmitir a cierta señal está la frecuencia central, el ancho de banda, ganancia y tipo de modulación.
+   
 3. ¿Cómo se configura el osciloscopio para medir la amplitud y la frecuencia de una señal?
+   Luego de la conexión, y ajuste a las escalas tanto horizontales como verticales sin saturar la señal. Se puede seleccionar una de las mediciones automáticas del osciloscopio para valores más precisos.
+   
 4. ¿Qué diferencia hay entre medir una señal en el dominio del tiempo (osciloscopio) y en el dominio de la frecuencia (analizador de espectros)?
+   La diferencia está en que cada uno representa algo diferente, en el oscilador se vé la variación de la señal en el tiempo, permitiendo tomar valores como amplitud, transitorios o ver las formas de onda.
+   Por otro lado, el analizador de espectro muestra la distribución de la señal en las frecuencias, permitiendo ver componentes como armónicos, ruido, potencia y demás.
+   
 5. ¿Cómo se mide el piso de ruido en el analizador de espectros? ¿Cómo afecta la frecuencia central, SPAN y RBW la medida de piso de ruido? ¿Por qué?
-
-### **Evidencia**
-- Lista con las 5 especificaciones más relevantes de cada equipo.
-- Realice una medición de piso de ruido normalizado.
+    Conectar y configurar el RBW, reducir el SPAN, la frecuencia central ya que mejoran la precisión y con ayuda de marcadores se puede observar el nivel de ruido mostrado en la pantalla. Por ejemplo un RBW mejora la detección de señales débiles pero aumenta el tiempo de respuesta o gráfico del analizador. 
 
 ---
 
