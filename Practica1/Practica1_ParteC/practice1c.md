@@ -33,8 +33,7 @@ Uso de IA: Se utilizó para reformular ciertas secciones del texto, verificar gr
 
 ## **Objetivo General**
 
-Familiarizarse con el uso de herramientas de software definido por radio (SDR) como GNU Radio, junto con equipos de medición como el USRP 2920, el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000. Los estudiantes aprenderán a medir y analizar parámetros clave en comunicaciones, como potencia, ancho de banda, relación señal a ruido (SNR) y piso de ruido.
-Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento de las señales en diferentes condiciones para elaborar el informe.
+Familiarizarse con el uso de herramientas de software definido por radio (SDR) como GNU Radio, junto con equipos de medición como el USRP 2920, el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000. Aprender a medir y analizar parámetros clave en comunicaciones, como potencia, ancho de banda, relación señal a ruido (SNR) y piso de ruido.
 
 ---
 
@@ -138,8 +137,7 @@ Debido a su conexión con un punto de referencia fijo, pueden introducir ruido a
 
 2. ¿Cómo afecta la forma de onda a la distribución de energía (potencia) en el dominio de la frecuencia?
 
-Afecta de diferentes formas dependiedno de la forma de onda de la señal, ya que por ejemplo para señales senoidales los espectros son concentrados, para señales rectangulares estos suelen tener espectros muy anchos y las señales que tengas tiempos cortos ocupan un mayor ancho de banda. 
-
+Las formas de las ondas influyen mucho en cómo se divide la energía en el área de frecuencias. Esto ocurre debido a que cada tipo de señal posee rasgos distintos en su espectro. Un ejemplo de ello, son aquellas señales que como el Seno tienen espectros en frecuencias precisas, ͏sin embargo͏, las señales que son rectangulares tienden a tener espectros más ampl͏ios, con partes de frecuencias que cubren un rango más gran͏de. Además, la͏s señales quíen duran menos su͏elen ocupar un ancho de banda mayor͏ en el ámbito de ͏frecu͏en͏cia.͏
 
 3. ¿Qué sucede con la señal en el dominio del tiempo y la frecuencia si se modifican los diferentes parámetros de la fuente? ¿Lo observado corresponde a lo esperado teóricamente?
 
@@ -148,7 +146,7 @@ Afecta de diferentes formas dependiedno de la forma de onda de la señal, ya que
    
 5. ¿Cómo se relaciona la amplitud de la señal con la potencia observada en el dominio de la frecuencia?
 
-La amplictud y la potencia estan directamente relacionados con la potencia que estan opbservados en el dominio dela frecuencia esto a traves de una relación cuadratica. Es decir, que la potencia es proporcional al cuadrado de la amplitud de la  señal. 
+La potencia de la señal y su amplitud están directamente relacionados en el dominio de la frecuencia. Esta relación surge de una relación cuadrática, esto significa que la potencia es proporcional al cuadrado de la amplitud de la señal. Es decir, que si la amplitud aumenta la señal también aumenta, la potencia que se observa en el dominio de la frecuencia incrementa de acuerdo con el cuadrado de ese cambio dado. 
 
 
 6. ¿Qué diferencias se observan entre una señal senoidal y una señal cuadrada en el dominio de la frecuencia?
@@ -159,10 +157,12 @@ Por otro lado, la señal cuadrada está compuesta por un conjunto infinito de ar
 
 
 ### **Evidencias**
-En las siguientes imagenes se puede observar el fenomeno antes mencionado. ![Primero](Primer punto/Imagenes/SCR05.PNG)
+En las siguientes imagenes se puede observar como en GNU radio se pueden ajustar los parametros antes mencionados.
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/GNURADIO.png)
 
 
-## **Actividad 3: Transmisión y Medición de Señales con el USRP 2920** (HACER UN PEQUEÑO ANÁLISIS DE LAS GRÁFICAS, COMPARAR RESULTADOS)
+
+## **Actividad 3: Transmisión y Medición de Señales con el USRP 2920** 
 
 ### **Objetivo**
 Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia, ancho de banda, piso de ruido y relación señal a ruido (SNR).
@@ -219,8 +219,9 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 
   D. Ancho de Banda
  /SENOIDAL 
+ ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0069.png)   
  /TRIANGULAR
-0068 - 0069 (HACER)!!!!!!!!!!!!!!!!!!
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0068.png)   
 
 **ANALIZAR**
  E. ANTENA
@@ -280,10 +281,7 @@ Si, por ejemplo en una señal seno, la relación de potencia está dado por la A
 
 ## ** Análisis de Resultados y Conclusiones**
 
-2. **Reflexionar sobre la SNR**:
-   - Analice la importancia de la relación señal a ruido (SNR) en las comunicaciones inalámbricas.
-   - Discuta cómo el piso de ruido afecta la capacidad de detectar señales débiles.
-La SNR es importante debido a que es de lo más usado en comunicaciones inalambricas, ya que afecta directamente a la señal, la capacidad de transmision de datos y la eficiencia del sistema. **(BORRAR)** HACER Y BORRAR
+La SNR es importante debido a que es de lo más usado en comunicaciones inalambricas, ya que afecta directamente a la señal, la capacidad de transmision de datos y la eficiencia del sistema.
 
 3. **Conclusiones**:
 
@@ -291,15 +289,55 @@ El osciloscopio está diseñado para observar las señales en el dominio del tie
 
 La relación señal a ruido **SNR** es un factor importante en las comunicaciones inalámbricas, que da información sobre la calidad, alcance y eficiencia de un sistema de comunicaciones.
 
-*Las limitaciones en el laboratorio pueden deberse a diversos fenómenos que generan ruido, lo que perturba la señal y afecta la precisión de las mediciones. Esto puede provocar discrepancias entre los resultados experimentales y los análisis teóricos.*
-*Para mejorar la precisión de las mediciones, es fundamental minimizar el ruido que afecta la señal, por ejemplo, mediante el uso de cables con mejor blindaje o técnicas de filtrado adecuadas. Además, contar con un ancho de banda más amplio permitiría analizar el espectro de la señal con mayor detalle, especialmente en frecuencias más altas.*
-**(BORRAR LA CURSIVA, ES DE LA PLANTILLA COMO EJEMPLO)**
+Las limitaciones en el laboratorio pueden deberse a diversos fenómenos que generan ruido, lo que perturba la señal y afecta la precisión de las mediciones. Esto puede provocar discrepancias entre los resultados experimentales y los análisis teóricos.*
+*Para mejorar la precisión de las mediciones, es fundamental minimizar el ruido que afecta la señal, por ejemplo, mediante el uso de cables con mejor blindaje o técnicas de filtrado adecuadas. Además, contar con un ancho de banda más amplio permitiría analizar el espectro de la señal con mayor detalle, especialmente en frecuencias más altas.
 
 ### **Preguntas Orientadoras**
 1. ¿Qué conclusiones se pueden obtener sobre la relación entre la potencia de la señal y la calidad de la comunicación?
+
+Es muy esencial para las comunicaciones debido a que una mayor potencia mejora la señal, debido a que una potencia de un nivel superior al ruido puede eliminar el ruido presente en el canal. esto aumenta el SNR, mejorando la fiabilidad y claridad del sonido de la comunicación, Pero, aumentar demasiado la potencia puede intervenir con otras señales y afectar las mismas, lo que hace que se apliquen otras técnicas que ayuden a mejorar el ruido y entre otros fenómenos, como lo son algoritmos de corrección de errores y modulaciones adaptativas para mejorar la comunicación de manera eficiente.
+
 2. ¿Cómo afecta el piso de ruido a la capacidad de detectar señales débiles?
+
+$$ SNR = \frac{P_{\text{señal}}}{P_{\text{ruido}}} $$
+El piso de ruido alto, hace que el SNR baje, lo que hace que las detecciones de las señales débiles se dificulten, y si en cambio se reduce el ruido de fondo, mejora el SNR y mejora la recepción de señales de baja potencia, Como lo describe la fórmula.
+Si la señal está muy cerca del piso de ruido lo que hace que el receptor se le dificulta distinguir la señal recibida, esto afecta principalmente al momento de recibir datos de larga distancia o entornos con interferencia. 
+
+
 3. ¿Qué limitaciones tienen los equipos utilizados en términos de ancho de banda y precisión en las mediciones?
+
+Las principales restricciones en el ancho de banda son las restricciones de frecuencia, debido a que dependiendo del ancho de banda de los equipos, no se puede analizar señales de alta frecuencia o señales con gran contenido espectral. También la dispersión de la señal, ya que debido a que si el ancho de banda del receptor es inferior al de la señal transmitida, esto hará que se pierdan componentes de altas frecuencias y esto hace que se distorsione la forma de onda. Y el ruido suele ser también una limitante debido a que los componentes que se utilizan como los cables tienen cierto nivel de ruido que afecta a la señal.
+
 4. ¿Cómo se pueden mejorar las mediciones de señal en un entorno con alto nivel de ruido?
+
+Para mejorar las mediciones se pueden usar filtros que ayuden con la disminución del ruido, ya sean filtros como pasa-banda, pasa-alta o pasa.banda que lo que hacen es eliminar componentes no deseados del espectro. Aumentar la potencia para mejorar la SNR. El tener conexiones a tierras adecuadas también ayudan a mejorar las mediciones. También incrementando la frecuencia de muestreo, debido a que se tiene una mayor captura de la variación de la señal. 
+
 5. ¿Qué aplicaciones prácticas tienen las mediciones de potencia y ancho de banda en sistemas de comunicaciones reales?
+
+Tienen diferentes aplicaciones como lo son: 
+Prueba y diseño de dispositivos de radiofrecuencia se hace con el fin de garantizar que cumplen con las normas establecidas como el ancho de banda.  También es usado en aplicaciones de seguridad y defensa como para monitorear señales que no estén autorizadas en el espectro. Tambien para optimizar el consumo, como en los  Dispositivos IoT deben ajustar su potencia de transmisión para maximizar la duración de la batería.
+
 6. ¿Cómo se puede medir la respuesta en frecuencia de un canal alámbrico?
+
+Se puede medir utilizando un analizador de red también llamado VNA, un osciloscopio con generadores de señales, análisis con la FFT, pero el método depende de qué tan precisa se requiere la medición. 
+
 7. ¿Cómo se puede obtener un modelo sencillo de las pérdidas (_pathloss_) en un canal inalámbrico?
+
+Un modelo sencillo del _pathlos_ se puede obtener de dos maneras, ya sea por ecuacion de espacio libre
+
+$$ PL_{\text{FS}}(dB) = 20\log_{10}(d) + 20\log_{10}(f) + 20\log_{10}\left(\frac{4\pi}{c}\right) $$
+
+o por el modelo con exponente de pérdida, en el cual se ajusta el parámetro n dependiendo del entorno. Siendo la ecuacion para entornos no ideales: 
+
+$$ PL(d) = PL(d_0) + 10n \log_{10} \left(\frac{d}{d_0} \right) $$
+
+
+
+### Referencias
+- [Rohde & Schwarz, *R&S® RTB2000 Digital Oscilloscope User Manual*, 2017](https://www.rohde-schwarz.com)
+  
+- [Rohde & Schwarz, *R&S® FPC1000 Spectrum Analyzer User Manual*, 2017](https://www.rohde-schwarz.com)
+
+- [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
+
+- "Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."
