@@ -109,6 +109,7 @@ Medición Piso de ruido:
 Generar y analizar señales en GNU Radio para entender cómo se comportan diferentes formas de onda en tiempo y frecuencia.
 
 ### **Procedimiento**  
+   Primero, se inició configurando el GNU Radio cargando el diseño de flujograma propuesto en la guía de laboratorio; se ajustaron parámetros como frecuencia de muestreo y ganancia de transmisión. Luego, la señal generada se observó para el dominio del tiempo en el osciloscopio y para las frecuencias en el espectro. Además, se hicieron variaciones en tipo de dato, frecuencia, amplitud y otros para evaluar los cambios en su representación.
 
 ### **Preguntas Orientadoras**
 1. ¿Cómo se puede explicar matemáticamente la diferencia entre una fuente de tipo flotante y una de tipo complejo?
@@ -155,6 +156,8 @@ En las siguientes imagenes se puede observar el fenomeno antes mencionado. ![Pri
 Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia, ancho de banda, piso de ruido y relación señal a ruido (SNR).
 
 ### **Procedimiento**
+   Se realizaron mediciones bajo diferentes configuraciones de parámetros, con el fin de comparar los resultados de las simulaciones con las mostradas en el analizador de espectros o osciloscopio.
+   
 1. **Configurar el USRP 2920**:
    - Configure el flujograma en GNU Radio para transmitir una señal a través del USRP. Habilite o deshabilite los bloques correspondientes (Channel Model, Throttle, UHD: USRP Sink, Virtual Sink). Para esto seleccione el bloque deseado y presionando `E` (enable) o `D` (disable), respectivamente.
    - Identifique el bloque de frecuencia de muestreo (samp_rate) y observe el efecto de cambiar su valor (e.g. 10 kHz).
