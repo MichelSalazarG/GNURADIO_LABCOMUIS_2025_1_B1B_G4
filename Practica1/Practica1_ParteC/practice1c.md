@@ -51,17 +51,7 @@ Familiarizarse con las especificaciones técnicas de los equipos de laboratorio 
 ### **Objetivo**
 Generar y analizar señales en GNU Radio para entender cómo se comportan diferentes formas de onda en tiempo y frecuencia.
 
-### **Procedimiento**
-1. **Iniciar GNU Radio**:
-   - Ejecute GNU Radio Companion (GRC) (`gnuradio-companion`).
-   - Cargue el flujograma [`simple_flowgraph.grc`](https://github.com/omreyes/LabComUIS/blob/develop/guides/practice1/simple_flowgraph.grc).
-   - Identifique los bloques principales: `Signal Source`, `Throttle`, `QT GUI Time Sink` y `QT GUI Frequency Sink`.
-   - Configure la frecuencia de muestreo (samp_rate) en 20 kHz.
-
-2. **Ejecutar el Flujograma**:
-   - Ejecute el flujograma y observe los diferentes controles (Source Controls, Channel Controls, USRP Controls), así como las señales generadas en las ventanas de tiempo (`Time Sink`) y frecuencia (`Frequency Sink`).
-   - Identifique y relacione los bloques presentes en el flujograma con lo observado en la ventana de ejecución.
-  
+### **Procedimiento**  
 3. **Análisis de Señales** 
    - Analice y valide los resultados en el dominio del tiempo y de frecuencia si se modifica:
      - el tipo de dato de la fuente (compleja o flotante)
@@ -72,24 +62,42 @@ Generar y analizar señales en GNU Radio para entender cómo se comportan difere
 
 ### **Preguntas Orientadoras**
 1. ¿Cómo se puede explicar matemáticamente la diferencia entre una fuente de tipo flotante y una de tipo complejo?
-Las fuentes de tipo flotnate son aquellas que matematicamente se pueden modelar como el espectro de
-$$
-V_s(t) = V_1(t) - V_2(t)
-$$
-, lo que hace que elimine las fuentes comunes reduciendo el ruido. Las fuentes tipo complejas, es decir que estan referenciadas pueden contener más ruido en su señal, esta se modela como:
-$$
-V_s(t) = V_{\text{ref}} + A \cos(\omega t + \theta)
-$$
 
-3. ¿Cómo afecta la forma de onda a la distribución de energía (potencia) en el dominio de la frecuencia?
-4. ¿Qué sucede con la señal en el dominio del tiempo y la frecuencia si se modifican los diferentes parámetros de la fuente? ¿Lo observado corresponde a lo esperado teóricamente?
+Las fuentes de tipo flotnate son aquellas que matematicamente se pueden modelar como el espectro de
+
+$V_s(t) = V_1(t) - V_2(t)$
+
+Este modelo permite eliminar componentes de ruido comunes, mejorando la relación señal/ruido. Por otro lado, las fuentes referenciadas, también llamadas fuentes complejas, pueden verse afectadas por el ruido de su referencia. Su señal se describe como:
+
+$V_s(t) = V_{\text{ref}} + A \cos(\omega t + \theta)$
+
+Debido a su conexión con un punto de referencia fijo, pueden introducir ruido adicional en la señal medida.
+
+2. ¿Cómo afecta la forma de onda a la distribución de energía (potencia) en el dominio de la frecuencia?
+
+Afecta de diferentes formas dependiedno de la forma de onda de la señal, ya que por ejemplo para señales senoidales los espectros son concentrados, para señales rectangulares estos suelen tener espectros muy anchos y las señales que tengas tiempos cortos ocupan un mayor ancho de banda. 
+
+
+3. ¿Qué sucede con la señal en el dominio del tiempo y la frecuencia si se modifican los diferentes parámetros de la fuente? ¿Lo observado corresponde a lo esperado teóricamente?
+
+   Al realizar modificaciones,como lo es la amplitud, la frecuencia o entre otros parametros se puede comprobar de manera teorica asi como en el laboratorio los cambios que suele tener esta, debido a que los modelos se ajustan para que los valores sean lo más parecido posible, a pesar de ello existen factores que no se pueden ignorar como el ruido, que afecta directamente la señal.
+
+   
 5. ¿Cómo se relaciona la amplitud de la señal con la potencia observada en el dominio de la frecuencia?
+
+La amplictud y la potencia estan directamente relacionados con la potencia que estan opbservados en el dominio dela frecuencia esto a traves de una relación cuadratica. Es decir, que la potencia es proporcional al cuadrado de la amplitud de la  señal. 
+
+
 6. ¿Qué diferencias se observan entre una señal senoidal y una señal cuadrada en el dominio de la frecuencia?
 
-### **Evidencias**
-- Capturas de pantalla de señales generadas en el dominio del tiempo y la frecuencia que evidencien cada una de las comparaciones realizadas.
+La principal diferencia es que su respuesta en frecuencia para la señal es diferente, debido a que la señal solo tiene una frecuencia fundamental f0 sin armonicos adicionales.
+Por otro lado, la señal cuadrada está compuesta por un conjunto infinito de armónicos impares, (es decir, frecuencias múltiplos impares de , cuya amplitud decrece según una relación inversamente proporcional al orden del armónico (1/n, donde n es el orden del armónico). Esto hace que su representación en el dominio de la frecuencia muestre múltiples picos correspondientes a estos armónicos, con amplitudes que disminuyen progresivamente.
 
----
+
+
+### **Evidencias**
+En las siguientes imagenes se puede observar el fenomeno antes mencionado. ![Primero](Primer punto/Imagenes/SCR05.PNG)
+
 
 ## **Actividad 3: Transmisión y Medición de Señales con el USRP 2920**
 
