@@ -218,10 +218,11 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
   C. Potencia
   
   - Analizador de espectros.
-   / (FOTO 15:33 MEMORIA) APROX 3MARZO
+  ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/PTO2_C_ESP_pwtrans_SIM.jpeg)
    
   - Pantalla simulación
-  ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/PTO2_C_ESP_pwtrans_SIM.jpeg)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/PTO2_C_pwtransSIM.jpeg)
+
 
   D. Ancho de Banda
  /SENOIDAL
