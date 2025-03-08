@@ -81,8 +81,7 @@ Familiarizarse con las especificaciones técnicas de los equipos de laboratorio 
       - Potencia piso de ruido: <-97.88dBm
 
 Medición Piso de ruido:
-
-(IMAGEN)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Piso_ruido.jpeg)
 
 ### **Preguntas Orientadoras**
 1. ¿Cuál es el rango de frecuencia del USRP 2920 y cómo se compara con el del analizador de espectros?
