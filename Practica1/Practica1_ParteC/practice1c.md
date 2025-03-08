@@ -270,7 +270,8 @@ Para medir el ancho de banda en el analizador de espectros, se puede hacer uso d
 4. ¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
 
 Se puede hacer uso de la siguiente fórmula:
-$$\text{SNR (dB)} = 10 \cdot \log_{10} \left(\frac{\text{Potencia de la señal}}{\text{Potencia del ruido}}\right)$$.
+
+Relación señal/ruido (dB) = 10 · log₁₀ (Potencia de la señal / Potencia del ruido)
 
 5. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
 
@@ -281,12 +282,7 @@ Aumentar la ganancia o disminuirla, puede variar el ruido o calidad de la señal
 Si, por ejemplo en una señal seno, la relación de potencia está dado por la Amplitud al cuadrado por un medio. Entonces si se tiene la amplitud, medida de la cual el osciloscopio si está "diseñado" para medir nos serviría al medir o estimar la potencia.
 
 
-## **Actividad 4: Análisis de Resultados y Conclusiones**
-
-### **Para la Elaboración del Informe**
-1. **Comparar Resultados**:
-   - Compare los resultados obtenidos en las simulaciones y las transmisiones reales.
-   - Discuta las diferencias entre las mediciones realizadas con el osciloscopio y el analizador de espectros.
+## ** Análisis de Resultados y Conclusiones**
 
 2. **Reflexionar sobre la SNR**:
    - Analice la importancia de la relación señal a ruido (SNR) en las comunicaciones inalámbricas.
@@ -295,8 +291,12 @@ La SNR es importante debido a que es de lo más usado en comunicaciones inalambr
 
 3. **Conclusiones**:
 
-Las limitaciones en el laboratorio pueden deberse a diversos fenómenos que generan ruido, lo que perturba la señal y afecta la precisión de las mediciones. Esto puede provocar discrepancias entre los resultados experimentales y los análisis teóricos.
-Para mejorar la precisión de las mediciones, es fundamental minimizar el ruido que afecta la señal, por ejemplo, mediante el uso de cables con mejor blindaje o técnicas de filtrado adecuadas. Además, contar con un ancho de banda más amplio permitiría analizar el espectro de la señal con mayor detalle, especialmente en frecuencias más altas.
+El osciloscopio está diseñado para observar las señales en el dominio del tiempo, por otro lado, el analizador de espectros mide señales en el dominio de la frecuencia. A pesar que es el analizador de espectros la herramienta más precisa para medir la potencia, esta se puede medir indirectamente por la amplitud y tipo de señal con el osciloscopio.
+
+La relación señal a ruido **SNR** es un factor importante en las comunicaciones inalámbricas, que da información sobre la calidad, alcance y eficiencia de un sistema de comunicaciones.
+
+*Las limitaciones en el laboratorio pueden deberse a diversos fenómenos que generan ruido, lo que perturba la señal y afecta la precisión de las mediciones. Esto puede provocar discrepancias entre los resultados experimentales y los análisis teóricos.*
+*Para mejorar la precisión de las mediciones, es fundamental minimizar el ruido que afecta la señal, por ejemplo, mediante el uso de cables con mejor blindaje o técnicas de filtrado adecuadas. Además, contar con un ancho de banda más amplio permitiría analizar el espectro de la señal con mayor detalle, especialmente en frecuencias más altas.*
 
 
 ### **Preguntas Orientadoras**
