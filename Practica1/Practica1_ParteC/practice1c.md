@@ -85,21 +85,36 @@ Medición Piso de ruido:
 
 ### **Preguntas Orientadoras**
 1. ¿Cuál es el rango de frecuencia del USRP 2920 y cómo se compara con el del analizador de espectros?
+   
    El rango de frecuencia del USRP 2920 es indiscutiblemente más amplio que el del analizador de espectros, permitiendo cubrir frecuencias mayores.
    
 2. ¿Qué parámetros del USRP 2920 se deben configurar para transmitir una señal en una frecuencia específica?
+   
    Dentro de los parámetros a cambiar para trasnmitir a cierta señal está la frecuencia central, el ancho de banda, ganancia y tipo de modulación.
    
 3. ¿Cómo se configura el osciloscopio para medir la amplitud y la frecuencia de una señal?
+   
    Luego de la conexión, y ajuste a las escalas tanto horizontales como verticales sin saturar la señal. Se puede seleccionar una de las mediciones automáticas del osciloscopio para valores más precisos.
    
 4. ¿Qué diferencia hay entre medir una señal en el dominio del tiempo (osciloscopio) y en el dominio de la frecuencia (analizador de espectros)?
+   
    La diferencia está en que cada uno representa algo diferente, en el oscilador se vé la variación de la señal en el tiempo, permitiendo tomar valores como amplitud, transitorios o ver las formas de onda.
    Por otro lado, el analizador de espectro muestra la distribución de la señal en las frecuencias, permitiendo ver componentes como armónicos, ruido, potencia y demás.
    
 5. ¿Cómo se mide el piso de ruido en el analizador de espectros? ¿Cómo afecta la frecuencia central, SPAN y RBW la medida de piso de ruido? ¿Por qué?
+   
     Conectar y configurar el RBW, reducir el SPAN, la frecuencia central ya que mejoran la precisión y con ayuda de marcadores se puede observar el nivel de ruido mostrado en la pantalla. Por ejemplo un RBW mejora la detección de señales débiles pero aumenta el tiempo de respuesta o gráfico del analizador. 
 
+*Imágenes de Evidencia..*
+- Flujograma Usado:
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Flujograma.jpeg)
+- Escala vertical:
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Escala%20vertical.jpeg)
+- Tipos de mediciones osciloscopio:
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/TipoMedida1.jpeg)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/TipoMedida2.jpeg)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/TipoMedida3.jpeg)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/TipoMedida4.jpeg)
 ---
 
 ## **Actividad 2: Simulación de Señales en GNU Radio**
