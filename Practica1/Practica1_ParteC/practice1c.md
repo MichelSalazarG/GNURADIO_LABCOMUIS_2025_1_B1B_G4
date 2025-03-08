@@ -182,7 +182,52 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
    - Conecte la salida del USRP al analizador de espectros.
    - Mida el piso de ruido normalizado a la frecuencia de portadora que va a utilizar.
    - Compare el espectro de la señal observada en el analizador de espectros con la observada en la pantalla de simulación. Tenga en cuenta que el radio (USRP) equivale al diagrama de bloques mostrado en la figura.
+1. Configurar USRP 2920.
+       
+   A.  Analizador de espectros Piso de ruido a 700MHz
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Espectro_piso%20de%20ruido%20norm.jpeg)
+  - Pantalla simulación Piso de ruido a fc = 700MHz
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Sim_Piso%20de%20ruido%20norma.jpeg)
 
+   B.  Analizador de espectros frecuencia de muestreo diferente.
+
+   /1MHz (FOTO 1 MEMORIA 3 MARZO)
+   /10kHz (FOTO 2 MEMORIA 3 MARZO)
+
+   ANALISIS DE MODIFICAR FC Y GANANCIA...
+
+
+2. Medición analizador de espectros.
+
+   A.  Medición piso de ruido normalizado a Fc = 100MHz
+   
+  - Analizador de espectros.
+   / (FOTO 3 MEMORIA 3 MARZO)
+   
+  - Pantalla simulación
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Pto2_A_Piso%20de%20ruido%20norm%20sim.jpeg)
+
+  B. Variación en dominio de la frecuencia.
+  
+  - Analizador de espectros.
+   / (FOTO 4 MEMORIA 3 MARZO)
+   
+  - Pantalla simulación
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Variaci%C3%B3n_PTO2_B_sim.jpeg)
+
+  C. Potencia
+  
+  - Analizador de espectros.
+   / (FOTO 15:33 MEMORIA) APROX 3MARZO
+   
+  - Pantalla simulación
+  ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/PTO2_C_ESP_pwtrans_SIM.jpeg)
+
+  D. Ancho de Banda
+ /SENOIDAL
+ /TRIANGULAR
+
+ E. ANTENA
 <img src="qam_modulator.png" alt="QAM Modulator" width="400">
      
    - Analice y valide los resultados en el dominio de la frecuencia si se modifica:
@@ -191,6 +236,8 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
      - la frecuencia y fase de la señal
      - la amplitud de la señal generada.
    - Mida potencia de la señal transmitida y ancho de banda de diferentes señales generadas.
+
+   ultima vez!!!!!
    - Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido. 
    - Determinar la máxima potencia de transmisión.
    - Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
