@@ -1,10 +1,40 @@
 
 # Práctica 1C. Mediciones de potencia y frecuencia
 
-## **Objetivo General**
-Familiarizarse con el uso de herramientas de software definido por radio (SDR) como GNU Radio, junto con equipos de medición como el USRP 2920, el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000. Los estudiantes aprenderán a medir y analizar parámetros clave en comunicaciones, como potencia, ancho de banda, relación señal a ruido (SNR) y piso de ruido.
+### Integrantes
+- **PRIMER INTEGRANTE** - Código
+- **Michel Dayanna Salazar Gómez** - 2214194
+
+Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones  
+Universidad Industrial de Santander
+
+### Fecha
+07 de marzo de 2025
 
 ---
+## **Objetivo General**
+Familiarizarse con el uso de herramientas de software definido por radio (SDR) como GNU Radio, junto con equipos de medición como el USRP 2920, el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000. Los estudiantes aprenderán a medir y analizar parámetros clave en comunicaciones, como potencia, ancho de banda, relación señal a ruido (SNR) y piso de ruido.
+Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento de las señales en diferentes condiciones para elaborar el informe.
+
+---
+## Contenido
+
+### Resumen
+Descripción en no más de 150 palabras del contenido de la práctica. Debe ser conciso y brindar una idea clara sobre el trabajo realizado y sus conclusiones.
+
+**Palabras clave:** de 2 a 5 palabras clave. 
+
+### Introducción
+Cada práctica contará con preguntas orientadoras para la elaboración de la introducción. Por ejemplo: 
+- ¿Qué tan importante es la teoría de muestreo en el procesamiento de señales?
+- ¿Cuáles son los principales potenciales de GNURADIO en el laboratorio de comunicaciones?
+- ¿Qué pasa cuando se alcanza el límite de Nyquist?
+- ¿Qué tan alta debe ser la relación entre la frecuencia de muestreo y la frecuencia de la señal para visualizar la señal correctamente?
+- ¿Cuándo es importante interpolar una señal?
+- ¿Cuándo es importante diezmar una señal?
+- ¿Qué pasa cuando se asigna una frecuencia de muestreo inadecuada?
+
+### Procedimiento
 
 ## **Materiales y Equipos**
 - **USRP 2920**: Radio definido por software.
@@ -52,13 +82,6 @@ Familiarizarse con las especificaciones técnicas de los equipos de laboratorio 
 Generar y analizar señales en GNU Radio para entender cómo se comportan diferentes formas de onda en tiempo y frecuencia.
 
 ### **Procedimiento**  
-3. **Análisis de Señales** 
-   - Analice y valide los resultados en el dominio del tiempo y de frecuencia si se modifica:
-     - el tipo de dato de la fuente (compleja o flotante)
-     - la forma de onda 
-     - la frecuencia y fase de la señal
-     - la amplitud de la señal generada.
-   - Modifique el nivel de ruido del modelo de canal y analice el efecto en tiempo y frecuencia.
 
 ### **Preguntas Orientadoras**
 1. ¿Cómo se puede explicar matemáticamente la diferencia entre una fuente de tipo flotante y una de tipo complejo?
@@ -157,9 +180,6 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
 
 ## **Actividad 4: Análisis de Resultados y Conclusiones**
 
-### **Objetivo**
-Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento de las señales en diferentes condiciones para elaborar el informe.
-
 ### **Para la Elaboración del Informe**
 1. **Comparar Resultados**:
    - Compare los resultados obtenidos en las simulaciones y las transmisiones reales.
@@ -168,10 +188,13 @@ Analizar los resultados obtenidos y sacar conclusiones sobre el comportamiento d
 2. **Reflexionar sobre la SNR**:
    - Analice la importancia de la relación señal a ruido (SNR) en las comunicaciones inalámbricas.
    - Discuta cómo el piso de ruido afecta la capacidad de detectar señales débiles.
+La SNR es importante debido a que es de lo más usado en comunicaciones inalambricas, ya que afecta directamente a la señal, la capacidad de transmision de datos y la eficiencia del sistema.
 
-3. **Conclusiones Finales**:
-   - Escriba conclusiones basadas en los resultados obtenidos.
-   - Reflexe sobre las limitaciones de los equipos y cómo se podrían mejorar las mediciones.
+3. **Conclusiones**:
+
+Las limitaciones en el laboratorio pueden deberse a diversos fenómenos que generan ruido, lo que perturba la señal y afecta la precisión de las mediciones. Esto puede provocar discrepancias entre los resultados experimentales y los análisis teóricos.
+Para mejorar la precisión de las mediciones, es fundamental minimizar el ruido que afecta la señal, por ejemplo, mediante el uso de cables con mejor blindaje o técnicas de filtrado adecuadas. Además, contar con un ancho de banda más amplio permitiría analizar el espectro de la señal con mayor detalle, especialmente en frecuencias más altas.
+
 
 ### **Preguntas Orientadoras**
 1. ¿Qué conclusiones se pueden obtener sobre la relación entre la potencia de la señal y la calidad de la comunicación?
