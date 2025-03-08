@@ -13,16 +13,6 @@ Universidad Industrial de Santander
 ### Fecha
 07 de marzo de 2025
 
----
-
-## Declaración de Originalidad y Responsabilidad
-Los autores de este informe certifican que el contenido aquí presentado es original y ha sido elaborado de manera independiente. Se han utilizado fuentes externas únicamente como referencia y han sido debidamente citadas.
-
-Asimismo, los autores asumen plena responsabilidad por la información contenida en este documento. 
-
-Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo: "Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."]
-
----
 ## Contenido
 
 ### Resumen
@@ -55,7 +45,7 @@ Se sintetizan los principales aportes y puntos relevantes de la práctica, evita
 
 ### Referencias
 Ejemplo de referencia:
-
+Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."]
 - [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
 
 ---
