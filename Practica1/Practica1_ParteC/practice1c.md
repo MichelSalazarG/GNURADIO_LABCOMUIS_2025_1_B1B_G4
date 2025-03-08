@@ -222,7 +222,7 @@ Transmitir señales usando el USRP 2920 y medir parámetros clave como potencia,
   D. Ancho de Banda
  /SENOIDAL 
  /TRIANGULAR
-0068 - 0069 
+0068 - 0069 (HACER)!!!!!!!!!!!!!!!!!!
 
 ANALIZAR
 
@@ -230,28 +230,55 @@ ANALIZAR
  E. ANTENA
  
    I) Ancho de Banda.
-![]()   0073
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0073.png)   
    
    II) Relación señal a Ruido.
 ![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/Measurement0074.png)  
    
  3. *Medición osciloscopio*
-    03 --> 15:31 DESFASADA
-    04 --> CUADRADA 15:27
-    05 --->COS 15:31
-    06 ---> COS 15:32
+    
+- Señal Seno:
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/SCR03.PNG)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/OS03_sim_cap.jpeg)
+
+- Señal Cuadrada:
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/SCR04.PNG)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/OS04_sim.jpeg)
+
+- Señal cos:
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/SCR05.PNG)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/OS05_Sim.jpeg)
+
+- Señal cos:
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/SCR06.PNG)
+![](https://github.com/MichelSalazarG/GNURADIO_LABCOMUIS_2025_1_B1B_G4/blob/main/Practica1/Primer%20punto/Imagenes/OS06_sim.jpeg)
+
     
 ### **Preguntas Orientadoras**
 1. ¿Cómo se configura el USRP 2920 para transmitir una señal en una frecuencia específica?
 
-Para configurar el USRP 2920 a una frecuencia específica es necesario cambiar en el diagrama de flujo el valor de la Frecuencia dada en signal source.
+Para configurar el USRP 2920 a una frecuencia específica es necesario cambiar en el diagrama de flujo algunos parámetros como frecuencia, ganancia y ancho de banda.
 
-3. ¿Qué parámetros del flujograma afectan la potencia de la señal transmitida?
-4. ¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
-5. ¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
-6. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
-7. ¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
+2. ¿Qué parámetros del flujograma afectan la potencia de la señal transmitida?
 
+La ganancia, ancho de banda y frecuencia de muestreo son algunos de los parámetros que afectan la potencia de la señal.
+
+3. ¿Cómo se mide el ancho de banda de la señal transmitida en el analizador de espectros?
+
+Para medir el ancho de banda en el analizador de espectros, se puede hacer uso de marcadores para medir el rango de frecuencias donde la potencia es significativa.
+
+4. ¿Cómo se calcula la relación señal a ruido (SNR) a partir de las mediciones de potencia y piso de ruido?
+
+Se puede hacer uso de la siguiente fórmula:
+$$\text{SNR (dB)} = 10 \cdot \log_{10} \left(\frac{\text{Potencia de la señal}}{\text{Potencia del ruido}}\right)$$.
+
+5. ¿Qué diferencias se observan en las mediciones de potencia cuando se varía la ganancia del USRP?
+
+Aumentar la ganancia o disminuirla, puede variar el ruido o calidad de la señal transmitida y por tanto, la potencia.
+  
+6. ¿Es posible medir o estimar la potencia de la señal observada en el osciloscopio? ¿Por qué?
+
+Si, por ejemplo en una señal seno, la relación de potencia está dado por la Amplitud al cuadrado por un medio. Entonces si se tiene la amplitud, medida de la cual el osciloscopio si está "diseñado" para medir nos serviría al medir o estimar la potencia.
 
 
 ## **Actividad 4: Análisis de Resultados y Conclusiones**
