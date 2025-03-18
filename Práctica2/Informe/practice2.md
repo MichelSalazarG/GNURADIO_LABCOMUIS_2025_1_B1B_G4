@@ -42,17 +42,81 @@ Familiarizarse con algunos fenómenos de canal en un ambiente simulado.
 ### Preguntas Orientadoras
 
 - ¿Cuál es el efecto de filtrar las frecuencias altas de una señal?
+  
+![Imagen de WhatsApp 2025-03-18 a las 18 54 11_c6e4f346](https://github.com/user-attachments/assets/2a63c931-f3c8-43b8-8275-a0299c53e1f8)
+
+
 - ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
+
+![Imagen de WhatsApp 2025-03-18 a las 16 52 32_16314ef6](https://github.com/user-attachments/assets/50db37c1-ceb7-441c-b066-13a15ced5d88)
+
+![Imagen de WhatsApp 2025-03-18 a las 16 52 37_ec576c05](https://github.com/user-attachments/assets/7aac11b3-f927-4c95-b137-7a0fa7fa4486)
+
+![Imagen de WhatsApp 2025-03-18 a las 16 52 48_003380f8](https://github.com/user-attachments/assets/329c568b-4835-48e9-9c9a-dcdfcd4be857)
+
 - ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
 
 ![Imagen de WhatsApp 2025-03-18 a las 16 53 02_45f907e1](https://github.com/user-attachments/assets/c87f2746-0acc-43ec-876c-04a4e13b2591)
+
 ![Imagen de WhatsApp 2025-03-18 a las 16 53 09_955fab73](https://github.com/user-attachments/assets/869dacce-c0cc-4898-999e-0d8ae1a324ed)
 
 - ¿Qué ocurre al eliminar armónicos de una señal?
+  
+![Imagen de WhatsApp 2025-03-18 a las 16 54 15_66f7cb33](https://github.com/user-attachments/assets/90c0601d-789a-4446-8bae-f89e571ab549)
+
+![Imagen de WhatsApp 2025-03-18 a las 16 54 25_0dcc0369](https://github.com/user-attachments/assets/bdf78fd0-284b-40da-bf0d-1207a6351472)
+
+![Imagen de WhatsApp 2025-03-18 a las 16 54 32_78fcc9bb](https://github.com/user-attachments/assets/20a7e28d-de2f-43c8-be90-ab11d2f3e171)
+
+
 - ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
+  
+![Imagen de WhatsApp 2025-03-18 a las 18 49 49_be094ff1](https://github.com/user-attachments/assets/7df97105-3cb6-4aea-af59-4a52c8923eb4)
+
+Desviación Negativa:
+![Imagen de WhatsApp 2025-03-18 a las 18 50 03_ca9f29cf](https://github.com/user-attachments/assets/5e2dc48f-2278-457c-97e9-51f77b762822)
+
+Desviación positiva:
+![Imagen de WhatsApp 2025-03-18 a las 18 50 13_0566963f](https://github.com/user-attachments/assets/b475b5df-1c43-4900-aa8b-634fca4c182f)
+
+Constante:
+![Imagen de WhatsApp 2025-03-18 a las 18 50 25_085920d0](https://github.com/user-attachments/assets/9ca26430-00e9-4f8e-a179-926e30b6b3d7)
+
+
+CUADRADA NORMAL
+![Imagen de WhatsApp 2025-03-18 a las 16 55 34_075a793b](https://github.com/user-attachments/assets/c5e499af-2d8a-44a0-b738-2f12bdf32bcd)
+
+DESVIADA
+![Imagen de WhatsApp 2025-03-18 a las 16 55 48_bc2b50c1](https://github.com/user-attachments/assets/99fca368-a18a-4cf2-b2d1-9b9548879aa5)
+
 - ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
+
+CONSTANTE
+
+![Imagen de WhatsApp 2025-03-18 a las 16 56 03_efab8ba2](https://github.com/user-attachments/assets/e49de3ca-cae4-47a3-aae2-0f61b4a3a4e8)
+
+![Imagen de WhatsApp 2025-03-18 a las 16 56 12_1d97f865](https://github.com/user-attachments/assets/5e7fcdf1-c624-4e21-bb7b-85b6b4724d23)
+
+DIENTE DE SIERRA
+
+![Imagen de WhatsApp 2025-03-18 a las 16 56 57_bb78de21](https://github.com/user-attachments/assets/2244fbed-b006-4710-afca-5b04eaa089ed)
+
+![Imagen de WhatsApp 2025-03-18 a las 16 57 07_bf34d496](https://github.com/user-attachments/assets/256a5d8b-af8f-45f4-b0fc-2c71b90ca7fc)
+
 - ¿Cómo se puede mejorar la relación señal a ruido en una señal?
+  
+![Imagen de WhatsApp 2025-03-18 a las 18 47 32_cc03aae3](https://github.com/user-attachments/assets/62f817ae-8a86-4fa1-b229-4c7312ac0fe5)
+
+![Imagen de WhatsApp 2025-03-18 a las 18 47 39_ee3a00ad](https://github.com/user-attachments/assets/10c52b64-ddd1-44f1-aaa5-4a0023bb2694)
+
+![Imagen de WhatsApp 2025-03-18 a las 18 47 46_f6afd004](https://github.com/user-attachments/assets/a5171b52-e5e9-4e2e-bf7f-c90e4419f7bf)
+
+![Imagen de WhatsApp 2025-03-18 a las 18 48 00_b56d62ed](https://github.com/user-attachments/assets/bb05199a-8b46-4a67-97df-177d54e80573)
+
+![Imagen de WhatsApp 2025-03-18 a las 18 48 07_fdd2ccd7](https://github.com/user-attachments/assets/e0998302-4ba7-42bb-9374-e3ec57bd43c8)
+
 - ¿Cómo podría cuantificar la calidad de la señal recibida? Considere el caso de señales analógicas y digitales.
+
 
 ### Evidencia
 
