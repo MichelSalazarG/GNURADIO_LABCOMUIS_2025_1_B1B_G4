@@ -44,6 +44,10 @@ Familiarizarse con algunos fenómenos de canal en un ambiente simulado.
 - ¿Cuál es el efecto de filtrar las frecuencias altas de una señal?
 - ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
 - ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
+
+![Imagen de WhatsApp 2025-03-18 a las 16 53 02_45f907e1](https://github.com/user-attachments/assets/c87f2746-0acc-43ec-876c-04a4e13b2591)
+![Imagen de WhatsApp 2025-03-18 a las 16 53 09_955fab73](https://github.com/user-attachments/assets/869dacce-c0cc-4898-999e-0d8ae1a324ed)
+
 - ¿Qué ocurre al eliminar armónicos de una señal?
 - ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
 - ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
