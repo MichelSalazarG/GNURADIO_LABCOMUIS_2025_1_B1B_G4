@@ -53,6 +53,7 @@ Familiarizarse con algunos fenómenos de canal en un ambiente simulado.
 ### Evidencia
 
 *(Adjuntar las evidencias de la práctica en el Aula Virtual: capturas de pantalla, observaciones, cálculos o mediciones preliminares)*
+![e9d3044f-37a6-4a41-80a2-ed21c03d7c07](https://github.com/user-attachments/assets/ff676627-dcda-4d15-a309-cd5d6406be78)
 
 ---
 
