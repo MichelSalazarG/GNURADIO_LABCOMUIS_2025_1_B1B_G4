@@ -153,6 +153,11 @@ Familiarizarse con los fenómenos de un canal alámbrico real en el dominio del 
   - **NOTA:** La frecuencia de transmisión no debe superar los 500 MHz para ser observada en el osciloscopio. Para el experimento, considere las relaciones de muestreo correspondientes.
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
+![SCR01](https://github.com/user-attachments/assets/d1e9de90-ca2e-4c1a-a528-a459a1a8459d)
+![SCR02](https://github.com/user-attachments/assets/4167ad66-49e2-4fec-803e-fa6b495a6eb9)
+![SCR03](https://github.com/user-attachments/assets/d55f075e-0d80-40cc-a0a1-e10321aa3d4c)
+
+
 - ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
 
 ### Evidencia
