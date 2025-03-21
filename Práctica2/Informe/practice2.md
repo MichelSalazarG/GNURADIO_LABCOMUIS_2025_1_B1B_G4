@@ -145,13 +145,67 @@ Familiarizarse con los fenómenos de un canal alámbrico real en el dominio del 
 ### Preguntas Orientadoras
 
 - ¿Cuál es el efecto del ruido sobre la amplitud de las señales medidas en el osciloscopio? ¿Conservan las mismas relaciones que se evidencian en la simulación?
+SAWTOOTH SIN RUIDO
+![SCR05](https://github.com/user-attachments/assets/ad3e121f-bfb7-46d9-aafc-6b4869782a63)
+
+SAWTOOTH CON RUIDO 0.14
+![SCR06](https://github.com/user-attachments/assets/bc7e20ad-16b5-4790-b80b-f4488ddcbc56)
+
+COMPARACIÓN CON Y SIN RUIDO 
+
+![SCR07](https://github.com/user-attachments/assets/bcdbf9cc-ab92-4855-9262-d3116f135334)
+
+  SENO SIN RUIDO 
+![SCR10](https://github.com/user-attachments/assets/bf68f9a1-26ee-469a-83a8-4b6bce8925d3)
+
+  SENO CON RUIDO 0.2
+![SCR11](https://github.com/user-attachments/assets/da04a70c-7058-4f02-a646-4dc907485f70)
+
+  
 - ¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?
+SENO SIN RUIDO
+![SCR08](https://github.com/user-attachments/assets/3bc963f9-8eae-43ec-9525-e528d4238543)
+SENO CON RUIDO
+![SCR09](https://github.com/user-attachments/assets/002c116a-772c-47e4-9533-66ea40fd0998)
+
+
+
 - Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?
+
+  
 - ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda.
+
+  SEÑAL TRIANGULAR SIN DESVIACION
+![SCR13](https://github.com/user-attachments/assets/c18135b3-acca-4706-b403-a1409781c4e7)
+DESVIACION DE 1000
+![SCR14](https://github.com/user-attachments/assets/4afaf1aa-0137-43a8-88d4-33a9a51d76a3)
+DESVIACION DE 5000
+![SCR15](https://github.com/user-attachments/assets/0c59d89d-3853-454c-bcb5-463144f20240)
+
+COSENO SIN OFFSET
+![SCR17](https://github.com/user-attachments/assets/19af4961-70c1-4b51-9f96-3d6ca7be4f70)
+CON OFFSET DE 1000
+![SCR18](https://github.com/user-attachments/assets/c0b6fd0e-7e6f-4a2e-bacf-15444b550d94)
+CON OFFSET DE 5000
+![SCR20](https://github.com/user-attachments/assets/4568ea17-45ee-4395-9ed9-d1251624194b)
+
+
+
+  
 - Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
+
 - 
   - **NOTA:** La frecuencia de transmisión no debe superar los 500 MHz para ser observada en el osciloscopio. Para el experimento, considere las relaciones de muestreo correspondientes.
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
+SENO SIN RUIDO 
+ ![SCR22](https://github.com/user-attachments/assets/d2408bcc-e453-44b4-add9-014fe9a5fc8c)
+
+CON RUIDO
+![SCR23](https://github.com/user-attachments/assets/141fc9cb-c0cf-4ffd-9f52-4a3b24c164c2)
+
+![SCR24](https://github.com/user-attachments/assets/79b7cd87-0ca9-4943-a472-fd3042460b53)
+
+
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
 ![SCR01](https://github.com/user-attachments/assets/d1e9de90-ca2e-4c1a-a528-a459a1a8459d)
 ![SCR02](https://github.com/user-attachments/assets/4167ad66-49e2-4fec-803e-fa6b495a6eb9)
