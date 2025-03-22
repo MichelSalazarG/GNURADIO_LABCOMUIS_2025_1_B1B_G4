@@ -260,18 +260,71 @@ Familiarizarse con los fenómenos de un canal alámbrico real en el dominio de l
 ### Preguntas Orientadoras
 
 - ¿Cuál es el efecto del ruido sobre la respuesta en frecuencia de las señales medidas en el analizador de espectro? ¿Conservan las mismas relaciones que se evidencian en la simulación?
+  
+Señal original sin ruido:
+
+![9ab88f8a-1e12-462b-bb1f-a9f8510308f0](https://github.com/user-attachments/assets/a280dd9f-4cb3-43ef-9b14-0e6724371410)
+![7e76dfa8-71a3-4658-8b12-b10e2f55e2c3](https://github.com/user-attachments/assets/37e03352-52a5-4e2e-b557-5e9b0b2935f3)
+
+Señal con ruido de 0.25:
+![4accd017-26b5-4a88-bc81-98e6eb1ebd41](https://github.com/user-attachments/assets/26c350f2-2c19-4df7-8637-b015ef139518)
+![a01a552c-24c5-4076-979e-fc77fc758f11](https://github.com/user-attachments/assets/075975df-de31-43f6-91ba-efd6e1f40b86)
+![f4927d40-bd70-4def-9617-841b49c0045c](https://github.com/user-attachments/assets/8cb73dfb-f92e-45e8-befd-2683676bdd65)
+![03295f2a-1a35-4a81-b411-4530f65bc96b](https://github.com/user-attachments/assets/9340b84c-64cc-41be-8c68-39022e6c8464)
+![d8cb3ebe-6de9-41ef-9d10-28945ef35c7e](https://github.com/user-attachments/assets/0638b15c-db9c-4475-9fb1-d15d9f94d883)
+
+
 - ¿La relación señal a ruido creada intencionalmente desde el computador se amplifica o se reduce en la señal observada en el analizador de espectro?
+
+Señal triangular sin ruido:
+![672e4984-9687-416e-8882-e0997ec3b404](https://github.com/user-attachments/assets/26ba9266-b43a-47c8-86f9-109f3df3b611)
+![0e6535b1-9b6f-4fba-8186-78acef41a057](https://github.com/user-attachments/assets/506c9e77-06d0-4cfd-ad1d-db43b6e82457)
+
+Señal triangular con ruido 0.25:
+![f0640521-3bf6-4abb-a1dc-a758b46cea16](https://github.com/user-attachments/assets/885cc163-1f6b-4d96-848f-236dd06f301e)
+![b924c253-003f-4468-aa12-68d25f0ebbd5](https://github.com/user-attachments/assets/0b045bd7-e61f-4ea6-b657-df01ba79958a)
+![7e2a30c8-e539-4e77-8bad-720c8b22d0c3](https://github.com/user-attachments/assets/5024bf77-3531-454e-8590-13ff39fb0b55)
+![d5175d5f-f2be-4976-805b-48ae82ff9e60](https://github.com/user-attachments/assets/04e7544b-ffea-4558-9395-31937345d5b8)
+![45059b86-2adf-4245-b848-146395a14ce5](https://github.com/user-attachments/assets/b7549399-4582-4572-94cf-9efc3249694e)
+
+
 - Adjunte la evidencia de la medición de la relación señal a ruido de dos formas de onda distintas.
+
 - ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el analizador de espectro? Evidenciar al menos con dos formas de onda.
+
+Coseno sin desviación:
+![cbdc2aa3-3ccc-4e23-8aab-d9b8633bad35](https://github.com/user-attachments/assets/a56bea10-1268-461c-9cfd-87cafb4daf41)
+![955b0116-7526-48ed-a28f-15558fe8d563](https://github.com/user-attachments/assets/15fd518d-2a48-41bb-b6c9-1e3d5833e1a4)
+
+Desviación de 10kHz:
+![33e51af6-3872-43be-b9d0-7a884172bafc](https://github.com/user-attachments/assets/689a1abc-1a7c-4a93-937c-5bf92ab7aa8f)
+![cf951f9d-982c-4b7a-8b02-3208f13821d7](https://github.com/user-attachments/assets/19528c0b-f11e-4b0a-a041-eb01b1948c40)
+
+
 - Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
   - **NOTA:** La frecuencia de transmisión no debe superar los 1000 MHz para ser observada en el analizador. Para el experimento, considere las relaciones de muestreo correspondientes.
+
+Señal triangular Samp_rate=25e6/2
+![4cf0e6b9-51b8-4d89-96af-c8e528c02d30](https://github.com/user-attachments/assets/65d93e77-cd8d-44d4-9a03-c55f8d98ec9e)
+![ec84d343-bcb0-4959-a8c5-1c9c2ebf6fb0](https://github.com/user-attachments/assets/4ce87feb-4b1c-43af-9401-2f0748d4283a)
+
+Señal seno Samp_rate=25e6/2
+![212c6c95-7377-4f87-9fe5-53de9bbfdeb1](https://github.com/user-attachments/assets/33d9010b-b15f-4b7a-a1aa-0d61a3ea11ac)
+
+    
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
+![e78a5217-7f7d-4bd9-a789-37927ce6a2f2](https://github.com/user-attachments/assets/bb209095-887a-42e3-8cde-f571bc6cac9b)
+![4f7bc292-5ead-4d8c-b5e2-8bc689b929e4](https://github.com/user-attachments/assets/c1edb2e6-5105-4722-a9b2-7290c83e3c8f)
+![97b57008-6489-4f63-92aa-dd41f7236163](https://github.com/user-attachments/assets/045d1f9e-8ade-4325-9e93-d6e546805a53)
+
+
 - ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
 
-### Evidencia
+### Evidencia Flujograma
 
-*(Adjuntar las evidencias de la práctica en el Aula Virtual: capturas de pantalla, observaciones, cálculos o mediciones preliminares)*
+![ac983bf3-ac92-46e9-995e-ca9a83748948](https://github.com/user-attachments/assets/991eb082-5bc2-46b2-bd0d-4fea2e063e7a)
+
 
 ## Actividad 4: Efectos de los fenómenos de canal en la conversión de frecuencia
 
@@ -288,10 +341,20 @@ Familiarizarse con los efectos de los fenómenos de un canal alámbrico e inalá
    - Compare los resultados al recibir la señal usando diferentes medios (aire o cable coaxial).
 
 ### Preguntas Orientadoras
+Usando analizador de espectros
+Señal seno sin ruido:
+![b5e20bda-9d70-4cd3-8338-88139e117084](https://github.com/user-attachments/assets/ad776de6-a74a-4fbc-b1b7-716530118b76)
+![09d9721e-5d15-41f6-b893-660f86e21b3b](https://github.com/user-attachments/assets/846285e2-5a9f-451d-b441-f3c7c3d9b760)
+
+Señal seno con ruido de 0.5:
+![65c1d421-e399-4f35-b30e-2a37bfcdd3ed](https://github.com/user-attachments/assets/281b4401-bb46-48dd-8cc1-5339e3e8c9d6)
+![bd3f35ef-8dd2-4e7e-92c5-b7f9fc73589f](https://github.com/user-attachments/assets/83b24c16-9463-4593-b88c-3e322fdf9c87)
+![7d6d3ba8-a16b-4e85-8d7f-94d6d9c1bf32](https://github.com/user-attachments/assets/0dd33309-1ef3-4f6b-bc1e-17b02b99d193)
+
+Desviación:
+![35e2860b-814f-414d-aee6-9c2992819621](https://github.com/user-attachments/assets/a75fefc5-1bd6-4af7-8a4f-818260aa3a4d)
 
 - ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
 - ¿Cómo se pueden mitigar los efectos del canal en la señal recibida?
 
-### Evidencia
 
-*(Adjuntar las evidencias de la práctica en el Aula Virtual: capturas de pantalla, observaciones, cálculos o mediciones preliminares)*
