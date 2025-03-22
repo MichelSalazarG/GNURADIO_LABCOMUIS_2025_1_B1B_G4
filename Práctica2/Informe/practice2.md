@@ -273,9 +273,11 @@ Señal con ruido de 0.25:
 ![03295f2a-1a35-4a81-b411-4530f65bc96b](https://github.com/user-attachments/assets/9340b84c-64cc-41be-8c68-39022e6c8464)
 ![d8cb3ebe-6de9-41ef-9d10-28945ef35c7e](https://github.com/user-attachments/assets/0638b15c-db9c-4475-9fb1-d15d9f94d883)
 
+El ruido afecta la señal original, cambiando la forma de la señal original y agregando un nivel de piso de ruido cambiando de esa forma la relación señal a ruido.
 
 - ¿La relación señal a ruido creada intencionalmente desde el computador se amplifica o se reduce en la señal observada en el analizador de espectro?
-
+- Adjunte la evidencia de la medición de la relación señal a ruido de dos formas de onda distintas.
+  
 Señal triangular sin ruido:
 ![672e4984-9687-416e-8882-e0997ec3b404](https://github.com/user-attachments/assets/26ba9266-b43a-47c8-86f9-109f3df3b611)
 ![0e6535b1-9b6f-4fba-8186-78acef41a057](https://github.com/user-attachments/assets/506c9e77-06d0-4cfd-ad1d-db43b6e82457)
@@ -288,7 +290,13 @@ Señal triangular con ruido 0.25:
 ![45059b86-2adf-4245-b848-146395a14ce5](https://github.com/user-attachments/assets/b7549399-4582-4572-94cf-9efc3249694e)
 
 
-- Adjunte la evidencia de la medición de la relación señal a ruido de dos formas de onda distintas.
+SNR[dB]= Pn[dB]-Ps[dB]
+
+Medición Señal a Ruido triangular:
+SNR[dB]= Pn[dB]-Ps[dB]
+
+
+
 
 - ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el analizador de espectro? Evidenciar al menos con dos formas de onda.
 
@@ -300,6 +308,8 @@ Desviación de 10kHz:
 ![33e51af6-3872-43be-b9d0-7a884172bafc](https://github.com/user-attachments/assets/689a1abc-1a7c-4a93-937c-5bf92ab7aa8f)
 ![cf951f9d-982c-4b7a-8b02-3208f13821d7](https://github.com/user-attachments/assets/19528c0b-f11e-4b0a-a041-eb01b1948c40)
 
+El fenómeno de desviación da como resultado antes del filtro, la señal desplazada por el valor dado de la desviación en la simulación; así mismo en el analizador de espectros se ve como también la señal es desplazada.
+Ahora al analizar la desviación con la ganancia relativa después del filtro, se observa como cambia la amplitud y forma de onda de los diferentes componentes en frecuencia.
 
 - Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
   - **NOTA:** La frecuencia de transmisión no debe superar los 1000 MHz para ser observada en el analizador. Para el experimento, considere las relaciones de muestreo correspondientes.
@@ -341,6 +351,7 @@ Familiarizarse con los efectos de los fenómenos de un canal alámbrico e inalá
    - Compare los resultados al recibir la señal usando diferentes medios (aire o cable coaxial).
 
 ### Preguntas Orientadoras
+
 Usando analizador de espectros
 Señal seno sin ruido:
 ![b5e20bda-9d70-4cd3-8338-88139e117084](https://github.com/user-attachments/assets/ad776de6-a74a-4fbc-b1b7-716530118b76)
