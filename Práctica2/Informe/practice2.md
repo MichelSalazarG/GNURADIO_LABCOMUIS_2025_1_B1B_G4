@@ -45,20 +45,28 @@ Familiarizarse con algunos fenómenos de canal en un ambiente simulado.
   
 ![Imagen de WhatsApp 2025-03-18 a las 18 54 11_c6e4f346](https://github.com/user-attachments/assets/2a63c931-f3c8-43b8-8275-a0299c53e1f8)
 
+Se estaría aplicando un filtro banda base, donde se eliminan las frecuencias altas dejando solo aqueñas frecuencias de la señal dentro del rango permitido; lo que hace suavizar la señal reduciendo  y atenuando el ruido de alta frecuencia.
 
 - ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
 
+Señal constante filtrada cerca a 1000Hz:
 ![Imagen de WhatsApp 2025-03-18 a las 16 52 32_16314ef6](https://github.com/user-attachments/assets/50db37c1-ceb7-441c-b066-13a15ced5d88)
 
+Señal seno con ruido:
 ![Imagen de WhatsApp 2025-03-18 a las 16 52 37_ec576c05](https://github.com/user-attachments/assets/7aac11b3-f927-4c95-b137-7a0fa7fa4486)
 
+Señal seno filtrada cerca a 1000Hz:
 ![Imagen de WhatsApp 2025-03-18 a las 16 52 48_003380f8](https://github.com/user-attachments/assets/329c568b-4835-48e9-9c9a-dcdfcd4be857)
+
+Como se puede observar en las imágenes anteriores, al aplicar el filtro cerca de la frecuencia fundamental de la señal, esta se mantiene prácticamente intacta, mientras que el ruido y componentes no deseados logran una reducción significativa preservando la señal original.
 
 - ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
 
 ![Imagen de WhatsApp 2025-03-18 a las 16 53 02_45f907e1](https://github.com/user-attachments/assets/c87f2746-0acc-43ec-876c-04a4e13b2591)
 
 ![Imagen de WhatsApp 2025-03-18 a las 16 53 09_955fab73](https://github.com/user-attachments/assets/869dacce-c0cc-4898-999e-0d8ae1a324ed)
+
+Cuando se filtran las frecuencias bajas de una señal, se está aplicando un filtro pasa banda o pasa alta, lo que significa que se eliminan los componentes de frecuencia más bajas manteniendo las frecuencias altas. 
 
 - ¿Qué ocurre al eliminar armónicos de una señal?
   
@@ -68,6 +76,7 @@ Familiarizarse con algunos fenómenos de canal en un ambiente simulado.
 
 ![Imagen de WhatsApp 2025-03-18 a las 16 54 32_78fcc9bb](https://github.com/user-attachments/assets/20a7e28d-de2f-43c8-be90-ab11d2f3e171)
 
+Al eliminar armónicos con un filtro tiende a cambiar la estructura de la señal, se pierden los detalles en la forma de onda así como la reducción de la amplitud de ciertas frecuencias.
 
 - ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
   
@@ -89,6 +98,8 @@ CUADRADA NORMAL
 DESVIADA
 ![Imagen de WhatsApp 2025-03-18 a las 16 55 48_bc2b50c1](https://github.com/user-attachments/assets/99fca368-a18a-4cf2-b2d1-9b9548879aa5)
 
+Lo la desviación de frecuencia en una señal como se ve en las imágenes anteriores, genera cambios en el tiempo afectando tanto la forma de onda como la amplitud.  Al analizar la Ganancia relativa de la señal, se ve un desplazamiento tanto para izquierda o derecha en la frecuencia, dependiendo del valor y signo de la desviación.
+
 - ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
 
 CONSTANTE
@@ -103,6 +114,13 @@ DIENTE DE SIERRA
 
 ![Imagen de WhatsApp 2025-03-18 a las 16 57 07_bf34d496](https://github.com/user-attachments/assets/256a5d8b-af8f-45f4-b0fc-2c71b90ca7fc)
 
+Al analizar la señal en el dominio del tiempo, se observa que el ruido genera pequeñas variaciones respecto a la señal de onda original, dejando la onda de ser tan recta y cambiando a ser un poco más ondulada. 
+Por otro lado en el dominio de la frecuencia, se ve como salen nuevas componentes aunque de menor magnitud en comparación con las principales.  Una forma de medirlo podría ser con el SNR.
+
+$$
+SNR = 10 \log_{10} \left(\frac{P_{\text{señal}}}{P_{\text{ruido}}} \right)
+$$
+
 - ¿Cómo se puede mejorar la relación señal a ruido en una señal?
   
 ![Imagen de WhatsApp 2025-03-18 a las 18 47 32_cc03aae3](https://github.com/user-attachments/assets/62f817ae-8a86-4fa1-b229-4c7312ac0fe5)
@@ -115,8 +133,11 @@ DIENTE DE SIERRA
 
 ![Imagen de WhatsApp 2025-03-18 a las 18 48 07_fdd2ccd7](https://github.com/user-attachments/assets/e0998302-4ba7-42bb-9374-e3ec57bd43c8)
 
+Como se observa en las imágenes una forma de mejorar la relación señal a ruido meramente con el filtrado sería usar filtros con frecuencia de corte alta cerca a la frecuencia de corte fundamental usada en la señal.
+
 - ¿Cómo podría cuantificar la calidad de la señal recibida? Considere el caso de señales analógicas y digitales.
 
+La manera de cuantificar la calidad de la señal recibida sería con relaciones de señal a ruido o proporción de márgenes de error o ruido.
 
 ### Evidencia
 
