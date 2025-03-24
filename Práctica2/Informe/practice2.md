@@ -1,5 +1,12 @@
+# Laboratorio de Comunicaciones  
+## Universidad Industrial de Santander  
+
 # Práctica 2A. Modelo de canal
 
+### Integrantes  
+
+- **PRIMER INTEGRANTE** - Código  
+- **Michel Dayanna Salazar Gómez** - 2214194
 ## Objetivos
 - Observar cómo el canal puede afectar la calidad de la señal transmitida y cómo  mitigar sus efectos.
 - Evaluar aspectos clave como la relación señal-ruido y la eficiencia en la transmisión de datos.
@@ -7,7 +14,17 @@
 Este enfoque permitirá no solo verificar la teoría, sino también desarrollar habilidades prácticas en el manejo de equipos de laboratorio, como equipos de medición (USRP 2920, osciloscopio R&S RTB2004 y analizador de espectros R&S FPC1000).
 
 ---
+## Contenido
 
+### Resumen
+En esta práctica se utilizó GNU Radio para generar diversas señales con distintos fenómenos, permitiendo su observación tanto en el osciloscopio como en el analizador de espectro. De esta manera, se pudo analizar la forma de onda y los cambios que experimenta bajo diferentes condiciones.. 
+**Palabras clave:** Frecuencia, desviacion, amplitud, potencia, SNR. 
+
+### Introducción
+Cada práctica contará con preguntas orientadoras para la elaboración de la introducción. Por ejemplo: 
+- ¿Qué tan importante es la teoría de muestreo en el procesamiento de señales?
+
+- 
 ## Materiales y Equipos
 
 - **USRP 2920:** Radio definido por software.
@@ -367,5 +384,17 @@ Desviación:
 
 - ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
 - ¿Cómo se pueden mitigar los efectos del canal en la señal recibida?
+
+### Conclusiones
+Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
+
+### Referencias
+Ejemplo de referencia:
+
+- [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
+
+"Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."
+
+
 
 
