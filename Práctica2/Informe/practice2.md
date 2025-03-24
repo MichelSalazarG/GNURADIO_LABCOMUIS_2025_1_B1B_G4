@@ -10,19 +10,16 @@
 ## Objetivos
 - Observar cómo el canal puede afectar la calidad de la señal transmitida y cómo  mitigar sus efectos.
 - Evaluar aspectos clave como la relación señal-ruido y la eficiencia en la transmisión de datos.
-
-Este enfoque permitirá no solo verificar la teoría, sino también desarrollar habilidades prácticas en el manejo de equipos de laboratorio, como equipos de medición (USRP 2920, osciloscopio R&S RTB2004 y analizador de espectros R&S FPC1000).
-
+- Estudiar el fenomeno de las señales en tiempo y en frecuencia. 
 ---
 ## Contenido
 
 ### Resumen
-En esta práctica se utilizó GNU Radio para generar diversas señales con distintos fenómenos, permitiendo su observación tanto en el osciloscopio como en el analizador de espectro. De esta manera, se pudo analizar la forma de onda y los cambios que experimenta bajo diferentes condiciones.. 
+En esta práctica se utilizó GNU Radio para generar diversas señales con distintos fenómenos, permitiendo su observación tanto en el osciloscopio como en el analizador de espectro. De esta manera, se pudo analizar la forma de onda y los cambios que experimenta bajo diferentes condiciones.
 **Palabras clave:** Frecuencia, desviacion, amplitud, potencia, SNR. 
 
 ### Introducción
-Cada práctica contará con preguntas orientadoras para la elaboración de la introducción. Por ejemplo: 
-- ¿Qué tan importante es la teoría de muestreo en el procesamiento de señales?
+Los efectos del canal juegan un papel importante en la calidad y la confiabilidad de la señal recibida. Factores como la atenuacion, el ruido, la propagación y la interferencia pueden dividir la señal que afecta su calidad e inhibir la interpretación exacta. En este ejercicio, estos resultados se estudian utilizando GNU-Radio, URP 2920, análisis de osciloscopio y espectro, lo que permite analizar los efectos de varios estados de transmisión en la señal de tiempo.
 
 - 
 ## Materiales y Equipos
@@ -183,6 +180,7 @@ Familiarizarse con los fenómenos de un canal alámbrico real en el dominio del 
 ### Preguntas Orientadoras
 
 - ¿Cuál es el efecto del ruido sobre la amplitud de las señales medidas en el osciloscopio? ¿Conservan las mismas relaciones que se evidencian en la simulación?
+Como se observa en las imágenes, el ruido aumenta significativamente en comparación con la señal, lo que provoca su distorsión y afecta su correcta interpretación.
 SAWTOOTH SIN RUIDO
 ![SCR05](https://github.com/user-attachments/assets/ad3e121f-bfb7-46d9-aafc-6b4869782a63)
 
@@ -201,6 +199,8 @@ COMPARACIÓN CON Y SIN RUIDO
 
   
 - ¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?
+
+  La relación señal a ruido, generada intencionalmente en el computador, se amplifica al ser observada en el osciloscopio. Si el ruido es demasiado alto, la señal puede llegar a distorsionarse o incluso perderse.
 SENO SIN RUIDO
 ![SCR08](https://github.com/user-attachments/assets/3bc963f9-8eae-43ec-9525-e528d4238543)
 SENO CON RUIDO
@@ -210,8 +210,12 @@ SENO CON RUIDO
 
 - Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?
 
-  
+  La relación señal a ruido (SNR) se puede mejorar mediante varias técnicas, como lo seria: 
+  Filtrado: Utilizando filtros pasa bajas, pasa bandas o digitales para reducir el ruido no deseado.
+  Aumento de potencia de la señal: Incrementando la amplitud de la señal útil sin amplificar el ruido.
+
 - ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda.
+Se puede ver como  la onda mostrada en el osciloscopio presenta variaciones en su período y forma, reflejando cambios en la frecuencia instantánea.
 
   SEÑAL TRIANGULAR SIN DESVIACION
 ![SCR13](https://github.com/user-attachments/assets/c18135b3-acca-4706-b403-a1409781c4e7)
@@ -231,10 +235,14 @@ CON OFFSET DE 5000
 
   
 - Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
-
+Unas de las afecciones poddrian ser: Atenuación: A medida que la señal viaja a través del cable coaxial, su amplitud disminuye debido a la resistencia y pérdidas dieléctricas del medio.
+Ruido e interferencias externas: Los cables largos pueden actuar como antenas, captando ruido electromagnético del entorno.
 - 
   - **NOTA:** La frecuencia de transmisión no debe superar los 500 MHz para ser observada en el osciloscopio. Para el experimento, considere las relaciones de muestreo correspondientes.
 - Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
+
+Se puede ver afectada de varias maneras, como por ejemplo la atenuación debido a que a mayor longitud del cable, mayores serán las pérdidas resistivas y dieléctricas, lo que reduce la amplitud de la señal recibida. Estas pérdidas son más pronunciadas en frecuencias altas. Asi como, la dispersión de la señal: En cables largos, la velocidad de propagación puede variar con la frecuencia, causando distorsión en la forma de la señal.
+
 SENO SIN RUIDO 
  ![SCR22](https://github.com/user-attachments/assets/d2408bcc-e453-44b4-add9-014fe9a5fc8c)
 
@@ -251,6 +259,7 @@ CON RUIDO
 
 
 - ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
+Al tratarse de un sistema de transmisión por cable coaxial, este puede asemejarse a un canal lineal con ruido aditivo (AWGN). Esto se debe a que el ruido térmico y de fondo pueden afectar la señal observada en el osciloscopio, introduciendo distorsiones. Además, la atenuación, ya que el cable coaxial genera pérdidas que dependen de la frecuencia, reduciendo la amplitud de la señal a medida que la distancia aumenta.
 
 ### Evidencia
 
@@ -383,14 +392,20 @@ Desviación:
 ![35e2860b-814f-414d-aee6-9c2992819621](https://github.com/user-attachments/assets/a75fefc5-1bd6-4af7-8a4f-818260aa3a4d)
 
 - ¿Cómo se evidencian los diferentes fenómenos de canal en la señal recibida?
+
+Los diferentes fenómenos del canal se evidencian a través de sus efectos en la señal recibida:
+
+Dispersión: Provoca la distorsión de la forma de onda, alterando su estructura original.
+Interferencias externas: Introducen ruido no deseado en la señal, afectando su calidad.
+Atenuación: Se manifiesta como una reducción en la amplitud de la señal, disminuyendo su intensidad a medida que aumenta la distancia o la frecuencia.
+
 - ¿Cómo se pueden mitigar los efectos del canal en la señal recibida?
+Para mitigar estos efectos, lo ideal es utilizar filtros adecuados, ya sea pasa bajas o pasa bandas, para reducir el ruido e interferencias no deseadas. Además, es importante emplear cables de mejor calidad, con menor pérdida y mayor blindaje, para minimizar la atenuación y las interferencias externas. También se pueden utilizar amplificadores para compensar la atenuación y evitar que esta afecte significativamente la señal.
 
 ### Conclusiones
-Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
+En conclusion, en esta práctica se analizaron los diferentes efectos que pueden afectar un canal de comunicación, tales como la variación de frecuencia, el ruido y otros factores. Se observó cómo estos fenómenos se manifiestan tanto en el osciloscopio como en el analizador de espectro, permitiendo comparar la señal generada en GNU Radio con la señal recibida. Esto permitió evidenciar de manera práctica el impacto de las condiciones del canal en la calidad de la señal transmitida.
 
 ### Referencias
-Ejemplo de referencia:
-
 - [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
 
 "Se utilizó ChatGPT para reformular secciones del texto y verificar gramática, pero el contenido técnico fue desarrollado íntegramente por los autores."
