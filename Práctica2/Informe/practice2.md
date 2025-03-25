@@ -200,7 +200,8 @@ COMPARACIÓN CON Y SIN RUIDO
   
 - ¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?
 
-  La relación señal a ruido, generada intencionalmente en el computador, se amplifica al ser observada en el osciloscopio. Si el ruido es demasiado alto, la señal puede llegar a distorsionarse o incluso perderse.
+  La relación señal a ruido, generada intencionalmente en el computador, se amplifica al ser observada en el osciloscopio. Si el ruido es demasiado alto, la señal puede llegar a distorsionarse o incluso perderse. Se puede observar gracias a los marcadores que esta se amplifica aproximadamente 1 [V], lo que hace que nos demos cuenta que el ruido incrementa y afecta a la señal.
+  
 SENO SIN RUIDO
 ![SCR08](https://github.com/user-attachments/assets/3bc963f9-8eae-43ec-9525-e528d4238543)
 SENO CON RUIDO
