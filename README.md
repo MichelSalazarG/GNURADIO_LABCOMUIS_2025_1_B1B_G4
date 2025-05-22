@@ -26,7 +26,8 @@ El objetivo principal de esta práctica es introducir a los estudiantes al uso d
 
 Esta práctica se enfoca en el estudio del comportamiento de señales al pasar por un canal. Se realiza un análisis detallado en los dominios del tiempo y la frecuencia, abordando además la influencia del ruido. La práctica está dividida en dos partes con actividades específicas que refuerzan estos conceptos.
 
-
+### Práctica 3
+La práctica 3 está centrada en las modulaciones lineales, con énfasis en la modulación de amplitud (AM). Se analiza el efecto de estas modulaciones sobre las señales, tanto en el tiempo como en la frecuencia, y se profundiza en su representación y evaluación.
 
 ## Conclusión General
 
