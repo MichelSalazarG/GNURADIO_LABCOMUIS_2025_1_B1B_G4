@@ -29,6 +29,12 @@ Esta práctica se enfoca en el estudio del comportamiento de señales al pasar p
 ### Práctica 3
 La práctica 3 está centrada en las modulaciones lineales, con énfasis en la modulación de amplitud (AM). Se analiza el efecto de estas modulaciones sobre las señales, tanto en el tiempo como en la frecuencia, y se profundiza en su representación y evaluación.
 
+### Práctica 4
+La Práctica 4 se centró en el estudio de las modulaciones angulares, específicamente en los casos de banda estrecha y banda ancha. Se analizaron las características de cada tipo de modulación y su comportamiento espectral. Para ello, se hizo uso de los coeficientes de Bessel, los cuales permitieron identificar los armónicos presentes en la señal modulada para diferentes valores del índice de modulación B.
+
+### Práctica 5
+En esta práctica se realizó el análisis de la modulación PAM por muestreo natural, evaluando su comportamiento tanto en el dominio del tiempo como en el dominio de la frecuencia. Se estudiaron las formas de onda generadas, así como la influencia del ancho de pulso y la frecuencia de muestreo sobre la señal modulada. En la parte B de la actividad, se abordó el proceso de cuantización mediante el uso de GNURadio, implementando tanto cuantizadores uniformes como no uniformes. La cuantización uniforme divide el rango de la señal en intervalos iguales, mientras que la no uniforme ajusta los niveles de cuantización para mejorar la precisión en señales de baja amplitud, se analizaron los deltas de amplitud asi como los de tiempo. 
+
 ## Conclusión General
 
 Las prácticas realizadas a lo largo del semestre fueron fundamentales para afianzar los conceptos clave del curso "Comunicaciones I". A través de estas experiencias, se logró:
